@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Web Template
+        </title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <style>
+            body{
+               font-family: arial;
+               background-color: #1b3336;
+            }
+            .contain{
+                background-color: white;
+                box-shadow: 0px 0px 5px black;
+                border: 3px solid black;
+            }
+            #heading{
+                columns: 2;
+            }
+            #heading h1{
+                color: #1b3336;
+                padding: 10px;
+                font-weight: 900;
+            }
+            nav{
+                height: 55px;
+                margin: 10px;
+                margin-bottom: 20px;
+                border-radius: 5px;
+                background-color: #1b3336;
+            }
+            #nav_item{
+                display: grid;
+                grid-template-columns: 6fr 4fr;
+                margin: 5px;
+                padding-top: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 15px;
+            }
+            a:hover{
+                color: white;
+            }
+            #image{
+                margin-bottom: 50px;
+            }
+            #para p{
+                box-shadow: 0px 0px 5px black;
+                padding: 5px;
+                padding-left: 20px;
+                font-weight: bold;
+                font-size: 17px;
+                border-left: 5px solid #1b3336;
+                border-radius: 5px;
+                width: 850px;
+                text-align:left;            }
+            #para{
+                display: flex;
+                justify-content: center;
+                margin-bottom: 50px;
+            }
+            #cds{
+                display: grid;
+                grid-template-columns: 6fr 6fr;
+                margin: 20px;
+                margin-top: 50px;
+                margin-bottom: 50px;
+
+            }
+            
+            #inc{
+                border: #1b3336 solid 2px;
+                border-radius: 5px;
+                background-color: #1b3336;
+                color: white;
+                padding: 25px;
+                padding-bottom: 0px;
+                
+
+            }
+            #courses div{
+                display: flex;
+                justify-content: center;
+            }
+            #courses h4{
+                font-weight: bold;
+               margin: 10px;
+                margin-left: 40px;
+                margin-right: 40px;
+            }
+            #inc{
+                padding-bottom: 10px;
+            }
+            #inc:hover{
+                box-shadow: 0px 0px 5px black;
+            }
+            #card_image{
+                margin-top: 6px;
+            }
+            #card_image:hover{
+                box-shadow: 0px 0px 5px black;
+            }
+            .job_details{
+                display: grid;
+                grid-template-columns: 2fr 2fr 2fr 2fr 2fr 2fr;
+                margin-right: 30px;
+                margin-left: 10px;
+                
+            }
+            #job_heading{
+                margin: 40px;
+            }
+            #job_heading h1{
+                text-align: center;
+            }
+            .job_types{
+                background-color: #88b5d1;
+                overflow: auto;
+                margin-top: 30px;
+            }
+            li{
+                margin: 10px;
+            }
+            .icons{
+                font-size:50px;
+            }
+            .cards li img{
+                width: 200px;
+                height: 150px;
+            }
+            .cards li{
+                margin-left:-15px;
+                margin-bottom: 30px;
+            }
+            .card_list{
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+            .cards{
+                border: #1b3336 4px solid;
+                border-radius: 10px;
+                height: fit-content;
+                margin: 10px;
+            }
+            .cards:hover{
+                box-shadow: 0px 0px 5px #1b3336;
+
+            }
+            footer{
+                background-color: #1b3336;
+                color: white;
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="contain">
+            <div id="heading">
+               <div style="padding-top: 20px;">
+                <div style="text-align: left;">
+                    <h1 style="padding: 20px;padding-left: 40px; line-height: 40px;">Naresh Institute <br> and Technologies</h1>
+                </div>
+                <div style="text-align: right;">
+                    <img src="../assets/nareshit.png" alt="Naresh It" style="width:300px;height: 150px;">
+                </div>
+               </div>
+            </div>
+            <nav style="border: 3px solid black;">
+               <div id="nav_item">
+                <div class="nav_list" style="margin-left: 30px;font-weight: bold;">
+                    <a href="./index.html"><i class="bi bi-house-fill"></i> Home</a>
+                    <a href="./about.html"><i class="bi bi-question-diamond-fill"></i> About</a>
+                    <a href="./service.html"><i class="bi bi-question-circle-fill"></i> Service</a>
+                    <a href="./contact.html"><i class="bi bi-phone-fill"></i> Contact us</a>
+                </div>
+               <div style="display:flex;justify-content: right;">
+                <div class="nav_list" style="font-weight: bold;margin-right: 30px;">
+                    <a href="./sign_in.html"><i class="bi bi-box-arrow-in-right"></i> Sign In</a>
+                    <a href="./sign_up.html"><i class="bi bi-person-plus-fill"></i> Sign Up</a>
+                    <a href="./change_password.html"><i class="bi bi-unlock-fill"></i> Change Password</a>
+                </div>
+               </div>
+               </div>
+            </nav>
+            <div id="image">
+                <img src="../assets/a1.jpg" alt="naresh_it" width="100%" height="600">
+            </div>
+            <div style="margin: 40px;text-align: center;margin-bottom: 20px;">
+                <button type="button" class="btn btn-info"><b>show me what's in this package</b></button>
+            </div>
+            <div style="margin-bottom:50px;text-align: center;">
+                <button type="button" class="btn btn-danger"><b>What is the package</b></button>
+            </div>
+            <div id="para">
+                <p>* A package is a small container in which a quantity of something is sold. Packages are either small boxes made of thin cardboard, or bags or envelopes made of paper or plastic. ... When a product is packaged, it is put into containers to be sold.</p>
+            </div>
+            <div style="display: flex;justify-content: left;">
+                <hr style="height: 5px; width: 100%;">
+            </div>
+            <div id="cds">
+                <div>
+                <div class="car" style="text-align: center;display: flex;align-items: center;height: 250px;justify-content: right; margin-right: 10px;">
+                   <div id="inc">
+                       <div style="margin-bottom: 30px;"><h3 style="font-weight: bold;">Included Departments</h3></div>
+                   <div id="courses">
+                    <div><h4>M.Tech</h4><h4 style="color: rgb(0, 255, 0);">&#10004;</h4></div>
+                    <div><h4>B.Tech</h4><h4 style="color: rgb(0, 255, 0);">&#10004;</h4></div>
+                    <div><h4 style="margin-right:65px ;">MCA</h4><h4 style="color: rgb(0, 255, 0);">&#10004;</h4></div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+                <div style="display: flex;justify-content: left;margin-left: 10px;">
+                    <img style="border: #1b3336 solid 4px;border-radius: 5px;" src="../assets/a2.jpg" alt="group" width="370"height="240" id="card_image">
+                </div>
+            </div>
+            <div style="display: flex;justify-content: left;">
+                <hr style="height: 5px; width: 100%;">
+            </div>
+            <div class="job_types">
+                <div style="padding-bottom: 30px;overflow: auto;">
+                    <div id="job_heading"><h1 style="font-weight: 600;">What is the job</h1></div>
+                <div class="job_details">
+                    <div class="job_item">
+                        <ul type="none">
+                        <li class="mb-4"><h1 class="icons"><i class="bi bi-keyboard"></i></h1></li>
+                        <li><h4>Types of jobs</h4></li>
+                        <li>vocationologist. ...</li>
+                        <li>Quantum physicist. ...</li>
+                        <li>Oceanographer. ...</li>
+                        <li>Biomedical engineer. ...</li>
+                        </ul>
+                    </div>
+                    <div class="job_item">
+                        <ul type="none">
+                            <li class="mb-4"><h1 class="icons"><i class="bi bi-file-earmark-word"></i></h1></li>
+                        <li><h4>Define job profile</h4></li>
+                        <li><p>Job profile developed by the personnel department of a business might include such things as job responsibilities, required qualifications, advancement prospects.</p></li>
+                        </ul>
+                    </div>
+                    <div class="job_item">
+                        <ul type="none">
+                            <li class="mb-4"><h1 class="icons"><i class="bi bi-wordpress"></i></h1></li>
+                        <li><h4>Job profile summary</h4></li>
+                        <li><p>Profile summary is a summary of your education, skills, career experiences, and goals.</p></li>
+                        </ul>
+                    </div>
+                    <div class="job_item">
+                        <ul type="none">
+                            <li class="mb-4"><h1 class="icons"><i class="bi bi-display"></i></h1></li>
+                        <li><h4>The IT skills</h4></li>
+                        <li>coding</li>
+                        <li>Communication</li>
+                        <li>Network</li>
+                        <li>Time Management</li>
+                        <li>More Information Technology Skills</li>
+                        </ul>
+                    </div>
+                    <div class="job_item">
+                        <ul type="none">
+                            <li class="mb-4"><h1 class="icons"><i class="bi bi-display"></i></h1></li>
+                            <li><h4>Freshers key skills.</h4></li>
+                            <li>Communication.</li>
+                            <li>Ability to work undr pressure.</li>
+                            <li>Decision Making.</li>
+                            <li>TIme Management.</li>
+                            <li>Self-motivation</li>
+                            <li>Conflict Resolution.</li>
+                            <li>Personal skills?<br>Leadership</li>
+                            <li>Adaptability</li>
+                        </ul>
+                    </div>
+                    <div class="job_item">
+                        <ul type="none">
+                            <li class="mb-4"><h1 class="icons"><i class="bi bi-display"></i></h1></li>
+                            <li><h4>Personal skills</h4></li>
+                            <li><p>A skill is the ability to do something well, a certain competence or proficiency. Skills are typically acquired or developed through direct experiences and training, and they can require sustained effort.</p></li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <div>
+                <div style="margin-top:100px ;">
+                    <div style="display: grid;grid-template-columns: 8fr 4fr;margin-top: 50px;">
+                        <div style="padding-left: 20px;"><p><span style="font-size: 100px;color: yellow;">①</span> Why do you want this job?</p>
+                            <p>The hiring manager wants to: Learn about your career goals and how this position fits into your plan. Make sure that you are sincerely interested in the job and will be motivated to perform if hired. Find out what you know about the company, industry, position (and if you took the time to research).</p>
+                        </div>
+                        <div style="display: flex;justify-content: center;align-items: center;padding: 20px;">
+                            <img src="../assets/ind1.jpg" alt="job" width="350" height="250" style="border: #1b3336 4px solid;border-radius: 10px;">
+                        </div>
+                    </div>
+                    <div><hr style="text-align: left;width: 50%;padding: 2px; color: black;"></div>
+                    <div style="display: grid;grid-template-columns: 4fr 8fr;margin-top: 50px;">
+                        <div style="display: flex;justify-content: center;align-items: center;padding: 20px;">
+                            <img src="../assets/ind2.png" alt="job" width="400" height="250" style="border: #1b3336 4px solid;border-radius: 10px;">
+                        </div>
+                        <div><p><span style="font-size: 100px;color: red;">②</span>  What is a CV example?</p>
+                            <p>A resume is a brief summary. ... If you were writing your resume you would include only the work information that relates specifically to the job you're applying for, but for a Curriculum Vitae, you would also include all your teaching experience, lab and field work..
+                            </p>
+                        </div>
+                    </div>
+                    <div style="display: flex;justify-content: right;"><hr style="width: 50%;padding: 2px; color: black;"></div>
+                    <div style="display: grid;grid-template-columns: 8fr 4fr;margin-top: 50px;">
+                        <div style="padding-left: 20px;"><p><span style="font-size: 100px;color: green;">③</span>  Do you need a resume for your first job?</p>
+                            <p>When writing your first resume with no work experience, it's appropriate to include casual jobs like babysitting, pet sitting, lawn mowing, and shoveling snow. All experience counts and the way you present yourself, your skills, and your assets to a hiring manager begins with a strong resume.
+                            </p>
+                        </div>
+                        <div style="display: flex;justify-content: center;align-items: center;padding: 20px;">
+                            <img src="../assets/ind3.png" alt="job" width="400" height="250" style="border: #1b3336 4px solid;border-radius: 10px;">
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;justify-content: left;"><hr style="width: 50%;padding: 2px; color: black;"></div>
+                    <div style="display: grid;grid-template-columns: 4fr 8fr;margin-top: 50px;">
+                        <div style="display: flex;justify-content: center;align-items: center;padding: 20px;">
+                            <img src="../assets/ind4.jpg" alt="job" width="400" height="250" style="border: #1b3336 4px solid;border-radius: 10px;">
+                        </div>
+                        <div><span style="font-size: 100px;color: blue;">④</span>  I believe I will do well in this job
+                            <p>because I have the relevant skills and it is my field of interest. ... I have a confident that I can do well in the job because of self confidence, positive attitude. Previous success also brings self confidence for the future success.</p>
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div style="display: flex;justify-content: right;"><hr style="width: 50%;padding: 2px; color: black;"></div>
+                </div>
+                <div style="text-align: center;margin-top: 50px;margin-bottom: 70px;">
+                    <button type="button" class="btn btn-primary" style="background-color: #1b3336;margin-right: 10px;"><h4 style="padding: 10px;padding-left: 40px;padding-right: 40px;padding-bottom: 0px;">Request call back &nbsp;<i class="bi bi-telephone-inbound"></i></h4></button>
+                    <button type="button" class="btn" style="background-color: #88b5d1;margin-left: 10px;"><h4 style="font-weight: 500;padding: 10px;padding-bottom: 0px;">FAQ'S &nbsp;<i class="bi bi-card-text"></i></h4></button>
+                </div>
+            </div>
+            <div style="background-color: rgba(153, 153, 102, 0.66);;padding-bottom: 5px;">
+                <div style="text-align: center;"><h3 style="font-size: 40px;padding-top: 40px;">Student Department Details</h3></div>
+                <div style="display: grid;grid-template-columns: 3fr 3fr 3fr 3fr;margin-top: 40px;margin-bottom: 20px;">
+                    <div style="text-align: center;">
+                        <ul type="none">
+                            <li style="font-size: 60px;"><i class="bi bi-hourglass"></i></li>
+                            <li style="font-size: 20px;">Average Salary Offered</li>
+                            <li><h1>INR 7 L per annum</h1></li>
+                            <li style="font-size: 20px;">per annum</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <ul type="none">
+                            <li style="font-size: 60px;"><i class="bi bi-arrow-repeat"></i></li>
+                            <li style="font-size: 20px;">Duration</li>
+                            <li><h1>2</h1></li>
+                            <li style="font-size: 20px;">years</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <ul type="none">
+                            <li style="font-size: 60px;"><i class="bi bi-hand-thumbs-up"></i></li>
+                            <li style="font-size: 20px;">Average Fees Incurred</li>
+                            <li><h1>INR 25,000 - 2 L</h1></li>
+                            <li style="font-size: 20px;">per annum</li>
+                        </ul>
+                    </div>
+                    <div style="text-align: center;">
+                        <ul type="none">
+                            <li style="font-size: 60px;"><i class="bi bi-flag"></i></li>
+                            <li style="font-size: 20px;">Indian Institute of Technology, [IIT] Kanpur</li>
+                            <li><h1>49,035</h1></li>
+                            <li style="font-size: 20px;">Kanpur</li>
+                        </ul>
+                    </div>
+                </div>
+                <div style="text-align: center;margin-top: 30px;">
+                    <p>*job: A group of homogeneous tasks related by similarity of functions</p>
+                </div>
+            </div>
+            <div style="margin-top: 50px;">
+                <div style="margin: 20px;text-align: center;"><h1 style="font-weight: 600;"><i>SERVICES</i></h1></div>
+               <div style="display: flex;justify-content: center;">
+                <div class="card_list">
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s1.jpg" alt="[+]"></li>
+                        <li><h5>WEB DESIGN !!</h5></li>
+                        <li><p>
+                            Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.
+                        </p></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s2.jpg" alt="[+]"></li>
+                        <li><h5>IT SERVICES !!</h5></li>
+                        <li><p>
+                            We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support.
+                        </p></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s3.png" alt="[+]"></li>
+                        <li><h5>WEB MARKETING !!</h5></li>
+                        <li><p>
+                            We are passionate about digital content creation, strategy and delivery. We deliver results by designing marketing strategies which improve our clients brand visibility.
+                            </p></li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <br>
+            <hr style="padding: 4px;">
+            <br><br>
+            <footer>
+                <div style="text-align: center;padding: 20px;padding-top: 40px;"><h4>Naresh Technologies</h4></div>
+                <div style="display: flex;justify-content: center;padding-bottom: 30px;">
+                    <div style="display: grid;grid-template-columns: 4fr 4fr 4fr;">
+                        <div>
+                            <li><i class="bi bi-facebook"></i> Facebook</li>
+                            <li><i class="bi bi-envelope"></i> Google</li>
+                            <li><i class="bi bi-twitter"></i> Twitter</li>
+                            <li><i class="bi bi-youtube"></i> Toutube</li>
+                        </div>
+                        <div>
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Service</li>
+                            <li>Contact</li>
+                        </div>
+                        <div>
+                            <li>Name : Naresh Institute</li>
+                            <li>Email : info@nareshit.com</li>
+                            <li>Contact : +91-9876543210</li>
+                            <li>Adress : Sr nagar, Hydrabad, Telangana, India</li>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </body>
+</html>

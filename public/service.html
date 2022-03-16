@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            About
+        </title>
+        <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+        <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+        <meta name="viewport" content="width=device-width" initial-scale="1">
+        <style>
+            body{
+               font-family: arial;
+               background-color: #1b3336;
+            }
+            .contain{
+                background-color: white;
+                box-shadow: 0px 0px 5px black;
+                border: 3px solid black;
+            }
+            #heading{
+                columns: 2;
+            }
+            #heading h1{
+                color: #1b3336;
+                padding: 10px;
+                font-weight: 900;
+            }
+            nav{
+                height: 55px;
+                margin: 10px;
+                margin-bottom: 10px;
+                border-radius: 5px;
+                background-color: #1b3336;
+            }
+            #nav_item{
+                display: grid;
+                grid-template-columns: 6fr 4fr;
+                margin: 5px;
+                padding-top: 8px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+                margin: 15px;
+            }
+            a:hover{
+                color: white;
+            }
+            .table{
+                border: #1b3336 1px solid;
+                text-align: center;
+                width: 70%;
+                margin-bottom: 80px;
+            }
+            .table_div{
+                display: flex;
+                justify-content: center;
+            }
+            footer{
+                background-color: #1b3336;
+                color: white;
+            }
+            .footer_list li{
+                margin: 10px;
+            }
+            .cards li img{
+                width: 200px;
+                height: 150px;
+            }
+            .cards li{
+                margin-left:-15px;
+                margin-bottom: 30px;
+            }
+            .card_list{
+                display: grid;
+                grid-template-columns: 4fr 4fr 4fr;
+            }
+            .cards{
+                border: #1b3336 4px solid;
+                border-radius: 10px;
+                height: fit-content;
+                margin: 10px;
+            }
+            .cards:hover{
+                box-shadow: 0px 0px 5px #1b3336;
+
+            }
+        </style>
+    </head>
+    <body class="container-fluid">
+        <div class="contain">
+            <div id="heading">
+               <div style="padding-top: 20px;">
+                    <div style="text-align: left;">
+                        <h1 style="padding: 20px;padding-left: 40px; line-height: 40px;">Naresh Institute <br> and Technologies</h1>
+                    </div>
+                    <div style="text-align: right;">
+                        <img src="../assets/nareshit.png" alt="Naresh It" style="width:300px;height: 150px;">
+                    </div>
+               </div>
+            </div>
+            <nav style="border: 3px solid black;">
+               <div id="nav_item">
+                    <div class="nav_list" style="margin-left: 30px;font-weight: bold;">
+                        <a href="./index.html"><i class="bi bi-house-fill"></i> Home</a>
+                        <a href="./about.html"><i class="bi bi-question-diamond-fill"></i> About</a>
+                        <a href="./service.html"><i class="bi bi-question-circle-fill"></i> Service</a>
+                        <a href="./contact.html"><i class="bi bi-phone-fill"></i> Contact us</a>
+                    </div>
+                    <div style="display:flex;justify-content: right;">
+                        <div class="nav_list" style="font-weight: bold;margin-right: 30px;">
+                            <a href="./sign_in.html"><i class="bi bi-box-arrow-in-right"></i> Sign In</a>
+                            <a href="./sign_up.html"><i class="bi bi-person-plus-fill"></i> Sign Up</a>
+                            <a href="./change_password.html"><i class="bi bi-unlock-fill"></i> Change Password</a>
+                        </div>
+                    </div>
+               </div>
+            </nav>
+            <br>
+            <br>
+            <div style="margin-bottom: 30px;">
+                <div style="margin: 20px;text-align: center;"><h1 style="font-weight: 600;">SERVICES</h1></div>
+               <div style="display: flex;justify-content: center;">
+                <div class="card_list">
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s1.jpg" alt="[+]"></li>
+                        <li><h5>WEB DESIGN !!</h5></li>
+                        <li><p>
+                            Online ordering system helps to maintain a Better Business Relationship with your customers, which is a key factor to run any successful business.
+                        </p></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s2.jpg" alt="[+]"></li>
+                        <li><h5>IT SERVICES !!</h5></li>
+                        <li><p>
+                            We are ideally located in Larbert meaning we can offer IT support to businesses throughout Scotland. We take the hassle and worry out of your IT system by providing preventative and proactive IT support.
+                        </p></li>
+                        </ul>
+                    </div>
+                    <div class="cards">
+                        <ul type="none">
+                        <li><img src="../assets/s3.png" alt="[+]"></li>
+                        <li><h5>WEB MARKETING !!</h5></li>
+                        <li><p>
+                            We are passionate about digital content creation, strategy and delivery. We deliver results by designing marketing strategies which improve our clients brand visibility.
+                            </p></li>
+                        </ul>
+                    </div>
+                </div>
+               </div>
+            </div>
+            <footer>
+                <div style="text-align: center;padding: 20px;padding-top: 40px;">
+                    <h4>Naresh Technologies</h4>
+                </div>
+                <div style="display: flex;justify-content: center;padding-bottom: 30px;">
+                    <div style="display: grid;grid-template-columns: 4fr 4fr 4fr;">
+                        <div class="footer_list">
+                            <li><i class="bi bi-facebook"></i> Facebook</li>
+                            <li><i class="bi bi-envelope"></i> Google</li>
+                            <li><i class="bi bi-twitter"></i> Twitter</li>
+                            <li><i class="bi bi-youtube"></i> Toutube</li>
+                        </div>
+                        <div class="footer_list">
+                            <li>Home</li>
+                            <li>About</li>
+                            <li>Service</li>
+                            <li>Contact</li>
+                        </div>
+                        <div class="footer_list">
+                            <li>Name : Naresh Institute</li>
+                            <li>Email : info@nareshit.com</li>
+                            <li>Contact : +91-9876543210</li>
+                            <li>Adress : Sr nagar, Hydrabad, Telangana, India</li>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
